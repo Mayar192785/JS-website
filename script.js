@@ -1,44 +1,44 @@
 const getComputerChoice= () => {
     const randomNumber = (Math.floor(Math.random() * 3))
     if (randomNumber === 0){
-        return "Rock";
+        return "rock";
     }
     else if (randomNumber === 1){
-        return "Paper";
+        return "paper";
     }
     else if (randomNumber === 2){
-        return "Scissor";
+        return "scissor";
     }
 };
 
 function playRound(playerSelection,computerSelection){
-    let player= playerSelection.toLowerCase();
+    let player = playerSelection.toLowerCase();
 
-    if(player === "rock" && computerSelection ==="Paper"){
+    if(player === "rock" && computerSelection === "Paper"){
         return 0;
     }
-    else if(player=== "paper" && computerSelection==="Rock"){
+    else if(player === "paper" && computerSelection === "Rock"){
         return 1;
     }
-    else if(player==="rock" && computerSelection==="Scissor"){
+    else if(player === "rock" && computerSelection === "Scissor"){
         return 1;
     }
-    else if(player==="scissor" && computerSelection==="Rock"){
+    else if(player === "scissor" && computerSelection === "Rock"){
         return 0;
     }
-    else if(player==="paper" && computerSelection==="Scissor"){
+    else if(player === "paper" && computerSelection === "Scissor"){
         return 0;
     }
-    else if(player==="scissor" && computerSelection==="Paper"){
+    else if(player === "scissor" && computerSelection === "Paper"){
         return 1;
     }
-    else if(player==="scissor" && computerSelection==="Scissor"){
+    else if(player === "scissor" && computerSelection === "Scissor"){
         return 2;
     }
-    else if(player==="paper" && computerSelection==="Paper"){
+    else if(player === "paper" && computerSelection === "Paper"){
         return 2;
     }
-    else if(playerSelection==="rock" && computerSelection==="Rock"){
+    else if(playerSelection === "rock" && computerSelection === "Rock"){
         return 2;
     }
 };
